@@ -1,0 +1,18 @@
+body {
+  background-color: #444654;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.center {
+  text-align: center;
+  margin-top: 15%;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+a {
+  color: #1892e4;
+  text-decoration: none;
+  margin: 0 10px;
+}
