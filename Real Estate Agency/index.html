@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/6f4ccf3399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="node_modules/@splidejs/splide/dist/css/splide.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Real Estate Agency</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="hero-img">
+        <div class="container">
+          <div class="navbar navbar-index">
+            <div class="logo">
+              <a href="./index.html">Ho<span>mey</span></a>
+            </div>
+            <ul class="items">
+              <li class="nav-item"><a href="./index.html">Home</a></li>
+              <li class="nav-item">
+                <a href="./properties.html">Properties</a>
+              </li>
+              <li class="nav-item"><a href="./about_us.html">About us</a></li>
+              <li class="nav-item"><a href="./contact_us.html">Contact</a></li>
+            </ul>
+            <div class="toggle" id="burgerAnimation"></div>
+            <div class="navigation">
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./properties.html">Properties</a></li>
+                <li><a href="./about_us.html">About us</a></li>
+                <li><a href="./contact_us.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <section class="hero">
+            <!-- <div class="overlay"></div> -->
+            <div class="row">
+              <div class="col">
+                <h2>Find your beloving home</h2>
+                <p class="pb-5">
+                  Quality is what we pursue. We know what we do.
+                </p>
+                <br />
+                <h5 class="pt-5">What are you looking for?</h5>
+                <div class="suggestions-cards">
+                  <a href='./properties.html' class="card">
+                    <i class="fas fa-place-of-worship fa-3x"></i>
+                    <p>Modern Villa</p>
+                  </a>
+                  <a href='./properties.html' class="card">
+                    <i class="fas fa-home fa-3x"></i>
+                    <p>Family House</p>
+                  </a href='./properties.html'>
+                  <a href='./properties.html' class="card">
+                    <i class="fas fa-building fa-3x"></i>
+                    <p>Town House</p>
+                  </a href='./properties.html'>
+                  <a href='./properties.html' class="card">
+                    <i class="fas fa-hotel fa-3x"></i>
+                    <p>Apartment</p>
+                  </a href='./properties.html'>
+                </div>
+              </div>
+              <div class="col">
+                <form>
+                  <fieldset>
+                    <legend></legend>
+                    <div class="mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter keyword"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Property Type</label>
+                      <select class="form-select">
+                        <option>Apartment</option>
+                        <option>Modern Villa</option>
+                        <option>Town House</option>
+                        <option>Family House</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Rooms</label>
+                      <select class="form-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4+</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Baths</label>
+                      <select class="form-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" />
+                        <label class="form-check-label"> Garden </label>
+                      </div>
+                    </div>
+                    <a href="./properties.html" class="btn"> Submit </a>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <section class="properties-index">
+          <div class="container">
+            <div class="header">
+              <h2>Featured properties</h2>
+              <p>Handpicked properties by our team</p>
+            </div>
+            <div class="splide">
+              <div class="splide__slider">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <div class="property-index">
+                        <div class="card">
+                          <section class="photos">
+                            <div class="wrap">
+                              <a href='./properties/house_1.html'>
+                              <img src="./images/houses/house1/house1(1).jpg" /></a>
+                            </div>
+                          </section>
+                          <div class="property-info">
+                            <div class="property-type">
+                              <h5>Modern Villa</h5>
+                            </div>
+                            <div class="property-title">
+                              <a href="./properties/house_1.html"
+                                >Boston's Luxury Estate</a
+                              >
+                            </div>
+                            <div class="property-location">
+                              <i class="bi bi-geo-alt"></i>
+                              <p>United States</p>
+                            </div>
+                            <div>
+                              <ul class="property-details">
+                                <li class="item">
+                                  <div class="text">Beds: 6</div>
+                                </li>
+                                <li class="item">
+                                  <div class="text">Baths: 2</div>
+                                </li>
+                                <li class="item">
+                                  <div class="text">200 sqft</div>
+                                </li>
+                              </ul>
+                            </div>
+                            <hr />
+                            <div class="property-footer">
+                              <p>Agent Doe</p>
+                              <p>11 months ago</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="property-index">
+                        <div class="card">
+                          <section class="photos">
+                            <div class="wrap">
+                              <a href='./properties/house_2.html'>
+                              <img src="./images/houses/house2/house2(1).jpg" /></a>
+                            </div>
+                          </section>
+                          <div class="property-info">
+                            <div class="property-type">
+                              <h5>Apartment</h5>
+                            </div>
+                            <div class="property-title">
+                              <a href="./properties/house_2.html"
+                                >Poland Apartment</a
+                              >
+                            </div>
+                            <div class="property-location">
+                              <i class="bi bi-geo-alt"></i>
+                              <p>Poland</p>
+                            </div>
+                            <div>
+                              <ul class="property-details">
+                                <li class="item">
+                                  <div class="text">Beds: 2</div>
+                                </li>
+                                <li class="item">
+                                  <div class="text">Baths: 1</div>
+                                </li>
+                                <li class="item">
+                                  <div class="text">120 sqft</div>
+                                </li>
+                              </ul>
+                            </div>
+                            <hr />
+                            <div class="property-footer">
+                              <p>Agent Doe</p>
+                              <p>10 months ago</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="property-index">
+                        <div class="card">
+                          <section class="photos">
+                            <div class="wrap">
+                              <a href='./properties/house_3.html'>
+                              <img src="./images/houses/house3/house3(1).jpg" /></a>
+                            </div>
+                          </section>
+                          <div class="property-info">
+                            <div class="property-type">
+                              <h5>Town House</h5>
+                            </div>
+                            <div class="property-title">
+                              <a href="./properties/house_3.html"
+                                >London's Diamond</a
+                              >
+                            </div>
+                            <div class="property-location">
+                              <i class="bi bi-geo-alt"></i>
+                              <p>London</p>
+                            </div>
+                            <div>
+                              <ul class="property-details">
+                                <li class="item">
+                                  <div class="text">Beds: 2</div>
+                                </li>
+                                <li class="item">
+                                  <div class="text">Baths: 1</div>
+                                </li>
+                                <li class="item">
+                                  <div class="text">150 sqft</div>
+                                </li>
+                              </ul>
+                            </div>
+                            <hr />
+                            <div class="property-footer">
+                              <p>Agent Doe</p>
+                              <p>8 months ago</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="property-index">
+                        <div class="card">
+                          <section class="photos">
+                            <div class="wrap">
+                              <a href='./properties/house_4.html'>
+                              <img src="./images/houses/house4/house4(1).jpg" /></a>
+                            </div>
+                          </section>
+                          <div class="property-info">
+                            <div class="property-type">
+                              <h5>Modern Villa</h5>
+                            </div>
+                            <div class="property-title">
+                              <a href="./properties/house_4.html"
+                                >France Villa</a
+                              >
+                            </div>
+                            <div class="property-location">
+                              <i class="bi bi-geo-alt"></i>
+                              <p>France</p>
+                            </div>
+                            <div>
+                              <ul class="property-details">
+                                <li class="item">
+                                  <div class="text">Beds: 5</div>
+                                </li>
+                                <li class="item">
+                                  <div class="text">Baths: 3</div>
+                                </li>
+                                <li class="item">
+                                  <div class="text">220 sqft</div>
+                                </li>
+                              </ul>
+                            </div>
+                            <hr />
+                            <div class="property-footer">
+                              <p>Agent Doe</p>
+                              <p>2 months ago</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="property-index">
+                        <div class="card">
+                          <section class="photos">
+                            <div class="wrap">
+                              <a href='./properties/house_5.html'>
+                              <img src="./images/houses/house5/house5(1).jpg" /></a>
+                            </div>
+                          </section>
+                          <div class="property-info">
+                            <div class="property-type">
+                              <h5>Family House</h5>
+                            </div>
+                            <div class="property-title">
+                              <a href="./properties/house_5.html"
+                                >Petit Treasure House</a
+                              >
+                            </div>
+                            <div class="property-location">
+                              <i class="bi bi-geo-alt"></i>
+                              <p>France</p>
+                            </div>
+                            <div>
+                              <ul class="property-details">
+                                <li class="item">
+                                  <div class="text">Beds: 2</div>
+                                </li>
+                                <li class="item">
+                                  <div class="text">Baths: 2</div>
+                                </li>
+                                <li class="item">
+                                  <div class="text">90 sqft</div>
+                                </li>
+                              </ul>
+                            </div>
+                            <hr />
+                            <div class="property-footer">
+                              <p>Agent Doe</p>
+                              <p>12 months ago</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="property-index">
+                        <div class="card">
+                          <section class="photos">
+                            <div class="wrap">
+                              <a href='./properties/house_6.html'>
+                              <img src="./images/houses/house6/house6(1).jpg" /></a>
+                            </div>
+                          </section>
+                          <div class="property-info">
+                            <div class="property-type">
+                              <h5>Family House</h5>
+                            </div>
+                            <div class="property-title">
+                              <a href="./properties/house_6.html"
+                                >Arab Sea House</a
+                              >
+                            </div>
+                            <div class="property-location">
+                              <i class="bi bi-geo-alt"></i>
+                              <p>United Arab Emirates</p>
+                            </div>
+                            <div>
+                              <ul class="property-details">
+                                <li class="item">
+                                  <div class="text">Beds: 1</div>
+                                </li>
+                                <li class="item">
+                                  <div class="text">Baths: 1</div>
+                                </li>
+                                <li class="item">
+                                  <div class="text">100 sqft</div>
+                                </li>
+                              </ul>
+                            </div>
+                            <hr />
+                            <div class="property-footer">
+                              <p>Agent Doe</p>
+                              <p>6 months ago</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="property-index">
+                        <div class="card">
+                          <section class="photos">
+                            <div class="wrap">
+                              <a href='./properties/house_7.html'>
+                              <img src="./images/houses/house7/house7(1).jpg" /></a>
+                            </div>
+                          </section>
+                          <div class="property-info">
+                            <div class="property-type">
+                              <h5>Family House</h5>
+                            </div>
+                            <div class="property-title">
+                              <a href="./properties/house_7.html"
+                                >Germany's Finest</a
+                              >
+                            </div>
+                            <div class="property-location">
+                              <i class="bi bi-geo-alt"></i>
+                              <p>Germany</p>
+                            </div>
+                            <div>
+                              <ul class="property-details">
+                                <li class="item">
+                                  <div class="text">Beds: 2</div>
+                                </li>
+                                <li class="item">
+                                  <div class="text">Baths: 1</div>
+                                </li>
+                                <li class="item">
+                                  <div class="text">110 sqft</div>
+                                </li>
+                              </ul>
+                            </div>
+                            <hr />
+                            <div class="property-footer">
+                              <p>Agent Doe</p>
+                              <p>7 months ago</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="property-index">
+                        <div class="card">
+                          <section class="photos">
+                            <div class="wrap">
+                              <a href='./properties/house_8.html'>
+                              <img src="./images/houses/house8/house8(1).jpg" /></a>
+                            </div>
+                          </section>
+                          <div class="property-info">
+                            <div class="property-type">
+                              <h5>Town House</h5>
+                            </div>
+                            <div class="property-title">
+                              <a href="./properties/house_8.html"
+                                >Chilling Town House</a
+                              >
+                            </div>
+                            <div class="property-location">
+                              <i class="bi bi-geo-alt"></i>
+                              <p>Italy</p>
+                            </div>
+                            <div>
+                              <ul class="property-details">
+                                <li class="item">
+                                  <div class="text">Beds: 1</div>
+                                </li>
+                                <li class="item">
+                                  <div class="text">Baths: 1</div>
+                                </li>
+                                <li class="item">
+                                  <div class="text">80 sqft</div>
+                                </li>
+                              </ul>
+                            </div>
+                            <hr />
+                            <div class="property-footer">
+                              <p>Agent Doe</p>
+                              <p>5 months ago</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <div class="property-index">
+                        <div class="card">
+                          <section class="photos">
+                            <div class="wrap">
+                              <a href='./properties/house_9.html'>
+                              <img src="./images/houses/house9/house9(1).jpg" /></a>
+                            </div>
+                          </section>
+                          <div class="property-info">
+                            <div class="property-type">
+                              <h5>Family House</h5>
+                            </div>
+                            <div class="property-title">
+                              <a href="./properties/house_9.html"
+                                >Cozy Family House</a
+                              >
+                            </div>
+                            <div class="property-location">
+                              <i class="bi bi-geo-alt"></i>
+                              <p>Sweden</p>
+                            </div>
+                            <div>
+                              <ul class="property-details">
+                                <li class="item">
+                                  <div class="text">Beds: 2</div>
+                                </li>
+                                <li class="item">
+                                  <div class="text">Baths: 2</div>
+                                </li>
+                                <li class="item">
+                                  <div class="text">130 sqft</div>
+                                </li>
+                              </ul>
+                            </div>
+                            <hr />
+                            <div class="property-footer">
+                              <p>Agent Doe</p>
+                              <p>11 months ago</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="choose-us container-fluid">
+        <div class="header">
+          <h2>Why Choose Us</h2>
+          <p>We provide full service at every step</p>
+        </div>
+        <div class="why-choose-us container">
+          <div class="card">
+            <img src="" alt="" />
+            <i class="fas fa-users fa-3x"></i>
+            <h3>Trusted by thousands</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
+              architecto nobis maiores molestias, ut optio, culpa laudantium,
+            </p>
+          </div>
+          <div class="card">
+            <img src="" alt="" />
+            <i class="fas fa-house-user fa-3x"></i>
+            <h3>Wide Range of Properties</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
+              architecto nobis maiores molestias, ut optio, culpa laudantium,
+            </p>
+          </div>
+          <div class="card">
+            <img src="" alt="" />
+            <i class="fas fa-comments-dollar fa-3x"></i>
+            <h3>Financing Made Easy</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta
+              architecto nobis maiores molestias, ut optio, culpa laudantium,
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="partners container-fluid">
+        <div class="header">
+          <h2>Our Partners</h2>
+          <p>We only work with the best companies around the globe</p>
+        </div>
+        <div class="partners-logos container">
+          <img
+            src="https://g5p6r6b9.stackpathcdn.com/homeo/wp-content/uploads/2020/02/brand06.png"
+            alt="Image"
+            class="p-1"
+          />
+          <img
+            src="https://g5p6r6b9.stackpathcdn.com/homeo/wp-content/uploads/2020/02/brand03.png"
+            alt="Image"
+            class="p-1"
+          />
+          <img
+            src="https://g5p6r6b9.stackpathcdn.com/homeo/wp-content/uploads/2020/02/brand05.png"
+            alt="Image"
+            class="p-1"
+          />
+          <img
+            src="https://g5p6r6b9.stackpathcdn.com/homeo/wp-content/uploads/2020/02/brand01.png"
+            alt="Image"
+            class="p-1"
+          />
+          <img
+            src="https://g5p6r6b9.stackpathcdn.com/homeo/wp-content/uploads/2020/02/brand04.png"
+            alt="Image"
+            class="p-1"
+          />
+        </div>
+      </section>
+
+      <footer class="container-fluid footer">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2>About Site</h2>
+              <p>
+                We’re reimagining how you buy, sell and rent. Homey is all about
+                providing the global market with fantastic homes at fantastic
+                locations.
+              </p>
+            </div>
+            <div class="col">
+              <h2>Links</h2>
+              <ul class="links">
+                <li><a>About us</a></li>
+                <li><a>Terms & Conditions</a></li>
+                <li><a>Support Center</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <h2>Contact us</h2>
+              <p>info@homey.com</p>
+              <p>Bellerivestrasse 20, 8008 Zürich, Switzerland.</p>
+              <p class="tel">+41 123-456-789</p>
+            </div>
+            <div class="col">
+              <div class="row">
+                <h2>Follow us</h2>
+                <ul class="social">
+                  <li><i class="fab fa-facebook-f fa-1x"></i></li>
+                  <li><i class="fab fa-twitter fa-1x"></i></li>
+                  <li><i class="fab fa-instagram fa-1x"></i></li>
+                  <li><i class="fab fa-linkedin fa-1x"></i></li>
+                  <li><i class="fab fa-google fa-1x"></i></li>
+                </ul>
+              </div>
+              <div class="row">
+                <h2>Subscribe</h2>
+                <input
+                  class="col"
+                  type="email"
+                  name="EMAIL"
+                  placeholder="Your email"
+                  required=""
+                />
+                <button class="btn-submit" type="submit">
+                  <i class="far fa-paper-plane fa-1x"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="quick-pages">
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./properties.html">Properties</a></li>
+              <li><a href="./about_us.html">About</a></li>
+              <li><a href="./contact_us.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <div class="scroll-btn">
+        <i class="bi bi-arrow-up-circle-fill"></i>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"
+      integrity="sha512-BB7rb8ZBAxtdJdB7nwDijJH9NC+648xSzviK9Itm+5APTtdpgKz1+82bDl4znz/FBhd0R7pJ/gQtomnMpZYzRw=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- gia carousel -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
