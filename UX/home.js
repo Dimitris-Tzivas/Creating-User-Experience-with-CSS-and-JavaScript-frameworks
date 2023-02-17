@@ -1,6 +1,7 @@
 const myLink = document.getElementById("my-link");
 
 myLink.addEventListener("click", function (event) {
+  console.log("4654654654654");
   //   event.preventDefault(); // prevent the default behavior of following the link
   const { exec } = require("child_process");
   const path =
@@ -14,5 +15,3 @@ myLink.addEventListener("click", function (event) {
     console.log(`Output: ${stdout}`);
   });
 });
-
-console.log("4654654654654");
