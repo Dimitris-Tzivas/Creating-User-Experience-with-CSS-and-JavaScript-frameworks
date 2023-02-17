@@ -4,7 +4,7 @@ myLink.addEventListener("click", function (event) {
   //   event.preventDefault(); // prevent the default behavior of following the link
   const { exec } = require("child_process");
   const path =
-    "C:\Users\dimit\GitHub\Creating-User-Experience-with-CSS-and-JavaScript-frameworks\Admin Dashboard\index.js";
+    "C:UsersdimitGitHubCreating-User-Experience-with-CSS-and-JavaScript-frameworksAdmin Dashboardindex.js";
 
   exec("node index.js", { cwd: path }, (err, stdout, stderr) => {
     if (err) {
@@ -14,3 +14,5 @@ myLink.addEventListener("click", function (event) {
     console.log(`Output: ${stdout}`);
   });
 });
+
+console.log("4654654654654");
