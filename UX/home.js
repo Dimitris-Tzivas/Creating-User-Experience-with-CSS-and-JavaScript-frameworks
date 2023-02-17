@@ -1,6 +1,6 @@
 const myLink = document.getElementById("my-link");
 
-myLink.addEventListener("click", function (event) {
+myLink.addEventListener("click", function () {
   console.log("4654654654654");
   //   event.preventDefault(); // prevent the default behavior of following the link
   const { exec } = require("child_process");
