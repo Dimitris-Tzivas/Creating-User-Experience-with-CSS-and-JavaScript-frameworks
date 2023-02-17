@@ -28,7 +28,7 @@ app.get("/api", (request, response) => {
   });
 });
 
-app.get("/api2", (request, response) => {
+app.get("./api2", (request, response) => {
   customers_db.find({}, (err, data) => {
     if (err) {
       response.end();
