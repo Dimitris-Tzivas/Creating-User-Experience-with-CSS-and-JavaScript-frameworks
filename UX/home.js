@@ -12,6 +12,6 @@ myLink.addEventListener("click", function (event) {
   //   }
   //   console.log(`Output: ${stdout}`);
   // });
-  event.preventDefault(); // prevent the default behavior of following the link
+  // event.preventDefault(); // prevent the default behavior of following the link
   console.log("123"); // log "123" when the link is clicked
 });
