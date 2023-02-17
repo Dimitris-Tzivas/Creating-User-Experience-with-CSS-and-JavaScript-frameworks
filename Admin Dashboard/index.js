@@ -3,6 +3,8 @@ const express = require("express");
 const Datastore = require("nedb");
 const app = express();
 
+console.log("afdasdfasdfasdfasdfasdfasdfasdfasdf");
+
 app.listen(3000, () => console.log("Listening at port 3000."));
 app.use(express.static("public"));
 
@@ -28,7 +30,7 @@ app.get("/api", (request, response) => {
   });
 });
 
-app.get("./api2", (request, response) => {
+app.get("/api2", (request, response) => {
   customers_db.find({}, (err, data) => {
     if (err) {
       response.end();
